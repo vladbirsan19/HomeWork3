@@ -1,5 +1,7 @@
 package homework3;
 
+import java.util.List;
+
 public abstract class Car implements Vehicle {
     @Override
     public void start() {
@@ -7,39 +9,27 @@ public abstract class Car implements Vehicle {
 
     }
 
-    public abstract int shiftGear(int g1, int g2, int g3, int g4, int g5, int g6);
+    public abstract int shiftGear();
 
-    {
-        int g1 = 1;
-        int g2 = 2;
-        int g3 = 3;
-        int g4 = 4;
-        int g5 = 5;
-        int g6 = 6;
-
-
-
-
-    }
-
+    List<Integer> list = List.of(1, 2, 3, 4, 5, 6);
 
     public abstract int shiftGear(int gear);
+    int gear;
 
     @Override
-    public float drive(float distance) {
-        float d = distance;
+    public double drive(double distance) {
+        double d = distance;
         distance = d;
 
-        System.out.println("Car drove " + distance);
+        System.out.println("Car drove " + distance +" km.");
 
         return distance;
     }
-
-    public abstract void drive(double distance);
 
     @Override
     public void stop() {
         System.out.println("Car stopped");
 
     }
+
 }

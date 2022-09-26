@@ -3,13 +3,19 @@ package homework3;
 public class Main {
     public static void main(String[] args) {
 
-        // Car car = new Car(); // this should not compile.
-
-        // Car car = new Dacia(27, "oiqe0934hkkadsn"); // this should not compile! If I want to create a Dacia car, I will need to create an instance of a Dacia model.
-
         FordFocus car1 = new FordFocus();
 
-        System.out.println(car1);
+        car1.setModelName("Ford Focus");
+
+        car1.setVinNumber("WF05XXGCC5JT28033");
+
+        car1.getFuelTankSize();
+
+        car1.getFuelType1();
+
+        //car1.getFuelConsumption();
+
+        car1.setTireSize(18);
 
         car1.start();
 
@@ -37,11 +43,9 @@ public class Main {
 
         car1.drive(10);
 
-
-
-
-
         car1.stop();
+
+
 
 
     }

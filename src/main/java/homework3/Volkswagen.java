@@ -1,6 +1,6 @@
 package homework3;
 
-public abstract class Ford extends Car {
+public abstract class Volkswagen extends Car{
 
     @Override
     public void start() {
@@ -32,3 +32,4 @@ public abstract class Ford extends Car {
         super.stop();
     }
 }
+
