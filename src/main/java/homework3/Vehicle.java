@@ -5,10 +5,11 @@ public interface Vehicle {
     void start();
 
 
-    float drive(float distance);
+    double drive(double distance);
 
 
     void stop();
 
 
 }
+

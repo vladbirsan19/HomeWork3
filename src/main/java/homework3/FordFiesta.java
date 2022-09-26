@@ -1,7 +1,6 @@
 package homework3;
 
-public class FordFocus extends Ford {
-
+public class FordFiesta extends Ford {
     final int fuelTankSize;
     final String fuelType1;
     final String fuelType2;
@@ -27,9 +26,9 @@ public class FordFocus extends Ford {
         return fuelTankSize;
     }
 
-    public FordFocus() {
+    public FordFiesta() {
 
-        fuelTankSize = 45;
+        fuelTankSize = 40;
         fuelType1 = "Petrol";
         fuelType2 = "Hybrid";
         fuelType3 = "Diesel";
@@ -86,7 +85,7 @@ public class FordFocus extends Ford {
     }
 
     public void setModelName(String modelName) {
-        this.modelName = "Focus";
+        this.modelName = "Fiesta";
         System.out.println("Your Ford model is:" + modelName);
     }
 
